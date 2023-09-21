@@ -1,0 +1,268 @@
+/* Reset & General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Light Mode */
+[data-theme="light"] body {
+  background: #f4f3f3;
+  font-family: "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  color: #333333;
+}
+
+[data-theme="light"] .container {
+  background: #dfdfdf;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .form-label {
+  color: #333333;
+}
+
+[data-theme="light"] .form-input {
+  border: 1px solid #ccc;
+  background-color: #bfd8d5;
+  color: #333333;
+}
+
+[data-theme="light"] .logArea,
+[data-theme="light"] .latestImageContainer {
+  border: 1px solid #ddd;
+  background: linear-gradient(to bottom right, #bfd8d5, #b1bed5);
+  border-radius: 7px;
+  padding: 10px;
+}
+
+/* Dark Mode */
+[data-theme="dark"] body {
+  background: linear-gradient(to bottom right, #3e3e3e, #333030);
+  font-family: "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  color: #eaeaea;
+}
+
+[data-theme="dark"] .container {
+  background: #272727;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .form-label {
+  color: #dddddd;
+}
+
+[data-theme="dark"] .form-input {
+  border: 1px solid #555555;
+  background: #333333;
+  color: #eaeaea;
+}
+
+[data-theme="dark"] .logArea,
+[data-theme="dark"] .latestImageContainer {
+  border: 1px solid #444444;
+  background: #333333;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+/* Common styles for both themes */
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.form-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px #007bff;
+  outline: none; /* Remove the default outline */
+}
+
+button {
+  background: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+button:disabled {
+  background: #555555;
+  cursor: not-allowed;
+}
+
+.logArea,
+.latestImageContainer {
+  flex-basis: 48%;
+}
+
+.logArea {
+  overflow-y: auto;
+  height: 450px;
+}
+
+.latestImageContainer p {
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+#latestImage {
+  width: 100%;
+  height: auto;
+}
+
+#stopButton {
+  background: #ff3d3d;
+}
+
+#stopButton:hover {
+  background: #ff5e5e;
+}
+
+/* Theme Switch Wrapper */
+.theme-switch-wrapper {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  width: 40px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: white;
+  bottom: 4px;
+  content: "";
+  height: 16px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 16px;
+}
+
+input:checked + .slider {
+  background-color: #007bff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(16px);
+}
+
+.slider.round {
+  border-radius: 12px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.contentArea {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Info Container */
+#infoContainer {
+  margin-top: 5px;
+  padding: 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Info Container - Light Mode */
+[data-theme="light"] #infoContainer {
+  background: linear-gradient(to bottom right, #bfd8d5, #b1bed5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Info Container - Dark Mode */
+[data-theme="dark"] #infoContainer {
+  background: linear-gradient(to bottom right, #3e3e3e, #333030);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Headings */
+#infoContainer h1,
+#infoContainer h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Make h1 bigger than h2 */
+#infoContainer h1 {
+  font-size: 2.2em;
+}
+
+#infoContainer h2 {
+  font-size: 1.5em;
+}
+
+/* Light Mode */
+[data-theme="light"] #infoContainer h1,
+[data-theme="light"] #infoContainer h2 {
+  color: #333333;
+}
+
+/* Dark Mode */
+[data-theme="dark"] #infoContainer h1,
+[data-theme="dark"] #infoContainer h2 {
+  color: #eaeaea;
+}
+
+.stepBreak {
+  padding-left: 25px;
+}
+
+[data-theme="light"] #infoContainer a {
+  color: #333333;
+  text-decoration: none;
+}
+
+[data-theme="dark"] #infoContainer a {
+  color: #eaeaea;
+  text-decoration: none;
+}

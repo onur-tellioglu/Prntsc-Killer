@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Change this to whatever you want -->
+    <title>Prnt.sc Killer</title>
+    <!-- Don't touch this -->
+    <meta charset="utf-8" />
+    <!-- Don't touch this -->
+    <meta name="viewport" content="width=device-width" />
+    <!-- Don't touch this / CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container" id="infoContainer">
+        <section id="appDescription">
+          <h1>Prnt.sc Killer</h1>
+          <p>
+            Prnt.sc Killer is a specialized tool designed to fetch and download
+            images based on user-defined start codes. The app aims to make bulk
+            image downloading more efficient and organized. The app is currently
+            in beta and is being actively developed. If you have any suggestions
+            or feedback, please feel free to contact me.
+          </p>
+          <br />
+        </section>
+        <section id="howToUse">
+          <h2>How to Use</h2>
+          <p class="stepBreak">
+            Step 1: Enter the start code in the "Start Code" field.
+          </p>
+          <p class="stepBreak">
+            Step 2: Specify the number of images you want to fetch in the
+            "Count" field.
+          </p>
+          <p class="stepBreak">
+            Step 3: Define the output path where the downloaded images will be
+            stored.
+          </p>
+          <p class="stepBreak">
+            Step 4: Click the "Start" button to initiate the download process.
+          </p>
+          <br />
+        </section>
+        <section id="disclaimer">
+          <h2>Disclaimer</h2>
+          <p>
+            Please note that this tool is intended for personal use and
+            educational purposes only. Make sure you have the rights to download
+            and use the images fetched by this tool. The developers are not
+            responsible for any misuse or copyright violations.
+          </p>
+          <br />
+        </section>
+        <section id="contact">
+          <h2>Contact Information</h2>
+          <p>
+            If you have any questions, concerns, or feedback, please mail me at:
+            <a href="mailto: suck@mydick.today"> suck@mydick.today </a>
+          </p>
+          <br />
+        </section>
+        <section id="credits">
+          <h2>Credits</h2>
+          <p>
+            Developer: Onur Tellioğlu
+            <span style="text-decoration: underline"
+              >[<span style="font-style: italic">Usav12</span>]</span
+            >
+          </p>
+        </section>
+      </div>
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch">
+          <input type="checkbox" id="themeSwitch" />
+          <div class="slider round"></div>
+        </label>
+        <em style="padding-left: 10px">Enable Dark Mode!</em>
+      </div>
+      <form id="settingsForm" class="form">
+        <label class="form-label" for="startCode">Start Code:</label>
+        <input
+          class="form-input"
+          type="text"
+          id="startCode"
+          name="startCode"
+          placeholder="Enter Something Like: 57xxi8"
+        />
+        <label class="form-label" for="count">Count:</label>
+        <input
+          class="form-input"
+          type="number"
+          min="0"
+          id="count"
+          name="count"
+          placeholder="Default: 10000"
+        />
+        <label class="form-label" for="outputPath">Output Path:</label>
+        <input
+          class="form-input"
+          type="text"
+          id="outputPath"
+          name="outputPath"
+          placeholder="Location to save images to. Example: output/"
+        />
+        <button type="button" id="startButton">Start</button>
+        <button type="button" id="pauseButton" disabled>Pause</button>
+        <button type="button" id="stopButton" disabled>Stop</button>
+      </form>
+      <div class="contentArea">
+        <div id="logArea" class="logArea">
+          <!-- Logs will appear here -->
+        </div>
+        <div id="latestImageContainer" class="latestImageContainer">
+          <p>Latest Image:</p>
+          <img id="latestImage" src="" alt="Latest Downloaded Image" />
+        </div>
+      </div>
+    </div>
+    <!-- Don't touch this / Renderer Script-->
+    <script src="renderer.js"></script>
+  </body>
+</html>
