@@ -21,7 +21,7 @@ If not already installed, download and install Node.js from [Node.js Official Si
 ### 2. Clone the Repository
 
 \```
-git clone https://github.com/[onur-tellioglu]/Prntsc-Killer.git
+git clone https://github.com/onur-tellioglu/Prntsc-Killer.git
 \```
 
 ### 3. Install Dependencies
@@ -57,7 +57,7 @@ This tool is intended for personal use and educational purposes only. Ensure you
 
 ## 🤝 Contributing
 
-For suggestions, feedback, or inquiries, please open an issue, make a pull request, or contact the developer directly at [suck@mydick.today](mailto:suck@mydick.today). All contributions are welcome! 😊
+For suggestions, feedback, or inquiries, please open an issue, make a pull request, or contact the developer directly at [onur.usav12@gmail.com](mailto:onur.usav12@gmail.com). All contributions are welcome! 😊
 
 ## 🙏 Credits
 
