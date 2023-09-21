@@ -66,3 +66,9 @@ For suggestions, feedback, or inquiries, please open an issue, make a pull reque
 ## 📜 License
 
 This project is licensed under the [MIT licensed](./LICENSE).
+
+## ☕ Buy Me a Coffee
+
+If you like this project, please consider buying me a coffee. I would really appreciate it! 😊
+
+My USDT (Tether) Wallet Address (TRC20): TQXW2FiawPpGah1jN2gCUBaSAqgbs5Hdyt
