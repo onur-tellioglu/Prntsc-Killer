@@ -2,6 +2,22 @@
 
 Prnt.sc Killer is a specialized Node.js application designed to scrape and download images from prnt.sc (Lightshot). It allows users to set start codes and customize various download preferences, providing an efficient and user-friendly experience. The application also features a graphical UI for those who prefer it over command-line interfaces.
 
+## Table of Contents
+
+1. [Prnt.sc Killer](#prntsc-killer)
+2. [🌟 Features](#-features)
+3. [🛠 Installation and Setup](#-installation-and-setup)
+   - [1. Install Node.js](#1-install-nodejs)
+   - [2. Clone the Repository](#2-clone-the-repository)
+   - [3. Install Dependencies](#3-install-dependencies)
+   - [4. Run the Application](#4-run-the-application)
+4. [🖱 Usage](#-usage)
+5. [🚨 Disclaimer](#-disclaimer)
+6. [🤝 Contributing](#-contributing)
+7. [🙏 Credits](#-credits)
+8. [📜 License](#-license)
+9. [☕ Buy Me a Coffee](#-buy-me-a-coffee)
+
 ## 🌟 Features
 
 - **User-Friendly Interface:** Graphical user interface for ease of use and accessibility
@@ -61,7 +77,7 @@ For suggestions, feedback, or inquiries, please open an issue, make a pull reque
 
 ## 🙏 Credits
 
-- Developer: Onur Tellioğlu [Usav12] (https://github.com/onur-tellioglu)
+- Developer: Onur Tellioğlu [Usav12](https://github.com/onur-tellioglu)
 
 ## 📜 License
 
