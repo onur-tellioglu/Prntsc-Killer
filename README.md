@@ -20,25 +20,25 @@ If not already installed, download and install Node.js from [Node.js Official Si
 
 ### 2. Clone the Repository
 
-\```
+```bash
 git clone https://github.com/onur-tellioglu/Prntsc-Killer.git
-\```
+```
 
 ### 3. Install Dependencies
 
 Dependencies are already installed in the repository except Electron. You must install Electron manually. To do this, run the following command in the project directory:
 
-\```
+```bash
 npm install electron
-\```
+```
 
 However, if you want to install the leftovers manually, follow the steps below.
 
 Navigate to the project directory and run:
 
-\```
+```bash
 npm install path axios cheerio fs crypto
-\```
+```
 
 ### 4. Run the Application
 
