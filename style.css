@@ -36,6 +36,26 @@
   padding: 10px;
 }
 
+[data-theme="light"] #infoContainer h1,
+[data-theme="light"] #infoContainer h2 {
+  color: #333333;
+}
+
+[data-theme="light"] #infoContainer a {
+  color: #333333;
+  text-decoration: none;
+}
+
+[data-theme="light"] #logArea::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #dfdfdf;
+}
+
+[data-theme="light"] #infoContainer {
+  background: linear-gradient(to bottom right, #bfd8d5, #b1bed5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
 /* Dark Mode */
 [data-theme="dark"] body {
   background: linear-gradient(to bottom right, #3e3e3e, #333030);
@@ -65,6 +85,26 @@
   background: #333333;
   border-radius: 7px;
   padding: 10px;
+}
+
+[data-theme="dark"] #infoContainer a {
+  color: #eaeaea;
+  text-decoration: none;
+}
+
+[data-theme="dark"] #logArea::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #272727;
+}
+
+[data-theme="dark"] #infoContainer {
+  background: linear-gradient(to bottom right, #3e3e3e, #333030);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] #infoContainer h1,
+[data-theme="dark"] #infoContainer h2 {
+  color: #eaeaea;
 }
 
 /* Common styles for both themes */
@@ -213,18 +253,6 @@ input:checked + .slider:before {
   transition: all 0.3s ease-in-out;
 }
 
-/* Info Container - Light Mode */
-[data-theme="light"] #infoContainer {
-  background: linear-gradient(to bottom right, #bfd8d5, #b1bed5);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Info Container - Dark Mode */
-[data-theme="dark"] #infoContainer {
-  background: linear-gradient(to bottom right, #3e3e3e, #333030);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
 /* Section Headings */
 #infoContainer h1,
 #infoContainer h2 {
@@ -241,28 +269,23 @@ input:checked + .slider:before {
   font-size: 1.5em;
 }
 
-/* Light Mode */
-[data-theme="light"] #infoContainer h1,
-[data-theme="light"] #infoContainer h2 {
-  color: #333333;
-}
-
-/* Dark Mode */
-[data-theme="dark"] #infoContainer h1,
-[data-theme="dark"] #infoContainer h2 {
-  color: #eaeaea;
-}
-
 .stepBreak {
   padding-left: 25px;
 }
 
-[data-theme="light"] #infoContainer a {
-  color: #333333;
-  text-decoration: none;
+#logArea::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
 }
 
-[data-theme="dark"] #infoContainer a {
-  color: #eaeaea;
-  text-decoration: none;
+#logArea::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.44, rgb(143, 143, 143)),
+    color-stop(0.72, rgb(93, 93, 93)),
+    color-stop(0.86, rgb(72, 72, 72))
+  );
 }
