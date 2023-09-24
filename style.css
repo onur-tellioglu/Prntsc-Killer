@@ -56,6 +56,11 @@
   background: linear-gradient(to bottom right, #bfd8d5, #b1bed5);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
+
+[data-theme="light"] body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #dfdfdf;
+}
 /* Light Mode End */
 
 /* Dark Mode Start */
@@ -107,6 +112,11 @@
 [data-theme="dark"] #infoContainer h1,
 [data-theme="dark"] #infoContainer h2 {
   color: #eaeaea;
+}
+
+[data-theme="dark"] body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #272727;
 }
 /* Dark Mode End */
 
@@ -297,6 +307,24 @@ input:checked + .slider:before {
 
 .stepBreak {
   padding-left: 25px;
+}
+
+/* Default Scrollbar Styles */
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.44, rgb(143, 143, 143)),
+    color-stop(0.72, rgb(93, 93, 93)),
+    color-stop(0.86, rgb(72, 72, 72))
+  );
 }
 
 #logArea::-webkit-scrollbar {
