@@ -1,29 +1,32 @@
-// Purpose: The main file of the app
-const { app, BrowserWindow } = require("electron");
-const path = require("path"); // npm install path
+const { app, BrowserWindow, screen } = require("electron");
+const path = require("path");
 
 // Create the browser window.
 const createWindow = () => {
+  // Get the full screen dimensions
+  const { width, height } = screen.getPrimaryDisplay().bounds;
+
   const win = new BrowserWindow({
-    icon: path.join(__dirname, "/Assets/Images/Icons/frog.ico"), // Set the icon of the app
+    icon: path.join(__dirname, "/Assets/Images/Icons/frog.ico"),
     webPreferences: {
-      nodeIntegration: true, // Enable Node.js integration
+      nodeIntegration: true,
       contextIsolation: false,
       preload: path.join(__dirname, "preload.js"),
     },
+    minWidth: width * 0.3, // Minimum width is 30% of the screen width
+    minHeight: height, // Height is fixed to the screen height
+    maxHeight: height, // Height is fixed to the screen height
   });
 
-  win.maximize(); // Maximize the window
-  win.loadFile("index.html"); // Load the index.html of the app
+  win.maximize();
+  win.setMenuBarVisibility(false);
+  win.loadFile("index.html");
 };
 
-// Create the window when the app is ready
 app.whenReady().then(createWindow);
 
-// Quit when all windows are closed, except on macOS.
 app.on("window-all-closed", () => {
   if (process.platform !== "darwin") {
-    // If the platform is not macOS
-    app.quit(); // Quit the app
+    app.quit();
   }
 });
