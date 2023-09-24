@@ -1,11 +1,12 @@
-/* Reset & General Styles */
+/* Reset & General Styles Start */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* Reset & General Styles End */
 
-/* Light Mode */
+/* Light Mode Start*/
 [data-theme="light"] body {
   background: #f4f3f3;
   font-family: "Helvetica Neue", sans-serif;
@@ -55,8 +56,9 @@
   background: linear-gradient(to bottom right, #bfd8d5, #b1bed5);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
+/* Light Mode End */
 
-/* Dark Mode */
+/* Dark Mode Start */
 [data-theme="dark"] body {
   background: linear-gradient(to bottom right, #3e3e3e, #333030);
   font-family: "Helvetica Neue", sans-serif;
@@ -106,8 +108,59 @@
 [data-theme="dark"] #infoContainer h2 {
   color: #eaeaea;
 }
+/* Dark Mode End */
 
-/* Common styles for both themes */
+/* Button Styles Start */
+button {
+  background: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+button:disabled {
+  background: #555555;
+  cursor: not-allowed;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controlButtons {
+  width: 48%;
+}
+
+.clearrLog {
+  width: 48%;
+}
+
+#clearLogButton {
+  background: #ff3d3d;
+}
+
+#clearLogButton:hover {
+  background: #ff5e5e;
+}
+
+#stopButton {
+  background: #ff3d3d;
+}
+
+#stopButton:hover {
+  background: #ff5e5e;
+}
+/* Button Styles End */
+
 .container {
   max-width: 1000px;
   margin: 40px auto;
@@ -135,25 +188,6 @@
   outline: none; /* Remove the default outline */
 }
 
-button {
-  background: #007bff;
-  color: #ffffff;
-  border: none;
-  border-radius: 6px;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-button:hover {
-  background: #0056b3;
-}
-
-button:disabled {
-  background: #555555;
-  cursor: not-allowed;
-}
-
 .logArea,
 .latestImageContainer {
   flex-basis: 48%;
@@ -172,14 +206,6 @@ button:disabled {
 #latestImage {
   width: 100%;
   height: auto;
-}
-
-#stopButton {
-  background: #ff3d3d;
-}
-
-#stopButton:hover {
-  background: #ff5e5e;
 }
 
 /* Theme Switch Wrapper */

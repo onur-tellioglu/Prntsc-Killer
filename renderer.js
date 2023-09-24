@@ -35,9 +35,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const startButton = document.getElementById("startButton");
   const stopButton = document.getElementById("stopButton");
   const pauseButton = document.getElementById("pauseButton");
+  const clearLogButton = document.getElementById("clearLogButton");
 
   // Initially disable the start button
   startButton.disabled = true;
+  clearLogButton.disabled = true;
 
   // Event listeners for input fields
   const inputIds = ["startCode", "count", "outputPath"];
@@ -65,6 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
     startButton.disabled = true;
     stopButton.disabled = false;
     pauseButton.disabled = false;
+    clearLogButton.disabled = false;
 
     // Reset control flags
     stopFlag.shouldStop = false;
@@ -99,6 +102,17 @@ document.addEventListener("DOMContentLoaded", () => {
     pauseButton.innerText = "Pause";
 
     isMainRunning = false;
+  });
+
+  // Clear Log button click handler
+  clearLogButton.addEventListener("click", () => {
+    document.getElementById("logArea").innerHTML = "";
+    clearLogButton.disabled = true;
+
+    // Enable the button after 2.5 seconds
+    setTimeout(() => {
+      clearLogButton.disabled = false;
+    }, 2500);
   });
 
   // Stop button click handler

@@ -65,7 +65,11 @@
           <p>
             Developer: Onur Tellioğlu
             <span style="text-decoration: underline"
-              >[<span style="font-style: italic">Usav12</span>]</span
+              >[<span style="font-style: italic"
+                ><a href="https://www.github.com/onur-tellioglu" target="_blank"
+                  >Usav12</a
+                ></span
+              >]</span
             >
           </p>
         </section>
@@ -103,9 +107,16 @@
           name="outputPath"
           placeholder="Location to save images to. Example: output/"
         />
-        <button type="button" id="startButton">Start</button>
-        <button type="button" id="pauseButton" disabled>Pause</button>
-        <button type="button" id="stopButton" disabled>Stop</button>
+        <div class="buttonContainer">
+          <div class="controlButtons">
+            <button type="button" id="startButton">Start</button>
+            <button type="button" id="pauseButton" disabled>Pause</button>
+            <button type="button" id="stopButton" disabled>Stop</button>
+          </div>
+          <div class="clearLog">
+            <button type="button" id="clearLogButton">Clear Log</button>
+          </div>
+        </div>
       </form>
       <div class="contentArea">
         <div id="logArea" class="logArea">
