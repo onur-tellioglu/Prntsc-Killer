@@ -11,6 +11,7 @@ Prnt.sc Killer is a specialized Node.js application designed to scrape and downl
    - [2. Clone the Repository](#2-clone-the-repository)
    - [3. Install Dependencies](#3-install-dependencies)
    - [4. Run the Application](#4-run-the-application)
+   - [5. Obfuscation and Building](#5-obfuscation-and-building)
 4. [🖱 Usage](#-usage)
 5. [🚨 Disclaimer](#-disclaimer)
 6. [🤝 Contributing](#-contributing)
@@ -20,13 +21,13 @@ Prnt.sc Killer is a specialized Node.js application designed to scrape and downl
 
 ## 🌟 Features
 
-- **User-Friendly Interface:** Graphical user interface for ease of use and accessibility
-- **Bulk Download:** Efficiently download multiple images in bulk
-- **Duplicate Handling:** Intelligent handling and removal of duplicate images
-- **Pause/Resume Functionality:** Easily pause and resume download processes
-- **Customizable Paths:** Set your preferred download path and output folder name for each download process separately
-- **Dark Mode:** An eye-friendly dark mode for extended usage sessions and night-time use
-- **Real-Time Updates:** The UI displays the most recently downloaded image in real-time
+- **User-Friendly Interface:** Graphical user interface for ease of use and accessibility.
+- **Bulk Download:** Efficiently download multiple images in bulk.
+- **Duplicate Handling:** Intelligent handling and removal of duplicate images.
+- **Pause/Resume Functionality:** Easily pause and resume download processes.
+- **Customizable Paths:** Set your preferred download path and output folder name for each download process separately.
+- **Dark Mode:** An eye-friendly dark mode for extended usage sessions and night-time use.
+- **Real-Time Updates:** The UI displays the most recently downloaded image in real-time.
 
 ## 🛠 Installation and Setup
 
@@ -42,23 +43,44 @@ git clone https://github.com/onur-tellioglu/Prntsc-Killer.git
 
 ### 3. Install Dependencies
 
-Dependencies are already installed in the repository except Electron. You must install Electron manually. To do this, run the following command in the project directory:
-
-```bash
-npm install electron
-```
-
-However, if you want to install the leftovers manually, follow the steps below.
-
 Navigate to the project directory and run:
 
 ```bash
-npm install path axios cheerio fs crypto
+npm install
 ```
 
 ### 4. Run the Application
 
-Execute the `run.vbs` file in the project directory.
+You can run the application using the following command:
+Or, you can basically use "run.vbs".
+
+```bash
+npm start
+```
+
+### 5. Obfuscation and Building
+
+When a build command is run, the code is obfuscated and then packaged for the specified platform. The following commands are available for building the application.
+
+#### For Windows:
+
+```bash
+npm run dist-win
+```
+
+#### For Linux:
+
+```bash
+npm run dist-linux
+```
+
+#### For MacOS:
+
+```bash
+npm run dist-mac
+```
+
+These commands will obfuscate the code and then package the application for the specified platform.
 
 ## 🖱 Usage
 
@@ -73,7 +95,7 @@ This tool is intended for personal use and educational purposes only. Ensure you
 
 ## 🤝 Contributing
 
-For suggestions, feedback, or inquiries, please open an issue, make a pull request, or contact the developer directly at [onur.usav12@gmail.com](mailto:onur.usav12@gmail.com). All contributions are welcome! 😊
+For suggestions, feedback, or inquiries, please open an issue, make a pull request, or contact the developer directly at [onur.tellioglu@icloud.com](mailto:onur.tellioglu@icloud.com). All contributions are welcome! 😊
 
 ## 🙏 Credits
 
@@ -81,10 +103,9 @@ For suggestions, feedback, or inquiries, please open an issue, make a pull reque
 
 ## 📜 License
 
-This project is licensed under the [MIT licensed](./LICENSE).
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
 ## ☕ Buy Me a Coffee
 
 If you like this project, please consider buying me a coffee. I would really appreciate it! 😊
-
 My USDT (Tether) Wallet Address (TRC20): TQXW2FiawPpGah1jN2gCUBaSAqgbs5Hdyt

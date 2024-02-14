@@ -1,19 +1,53 @@
 {
   "name": "prntsc-killer",
-  "version": "6.0.0",
+  "version": "1.0.0",
   "description": "Scrapes images from prnt.sc",
+  "author": "Usav12 <onur.tellioglu@icloud.com>",
   "main": "main.js",
   "scripts": {
     "start": "electron main.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "obfuscate": "node obfuscate.js",
+    "dist-linux": "npm run obfuscate && electron-builder --linux",
+    "dist-win": "npm run obfuscate && electron-builder --win",
+    "dist-mac": "npm run obfuscate && electron-builder --mac"
+  },
+  "build": {
+    "appId": "com.prntsc-killer.local",
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "icon": "/Assets/Images/Icons/frog.icns"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "/Assets/Images/Icons/frog.ico"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "/Assets/Images/Icons/frog.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    },
+    "asar": true
   },
   "dependencies": {
     "axios": "^1.5.0",
     "cheerio": "^1.0.0-rc.12",
-    "colors": "^1.4.0",
-    "electron": "^26.2.1",
-    "progress": "^2.0.3",
-    "readline-sync": "^1.4.10",
     "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "electron": "^26.6.7",
+    "electron-builder": "^24.9.1",
+    "electron-packager": "^17.1.2",
+    "javascript-obfuscator": "^4.1.0"
   }
 }
