@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Scrapes images from prnt.sc",
   "author": "Usav12 <onur.tellioglu@icloud.com>",
+  "license": "MIT",
   "main": "main.js",
   "scripts": {
     "start": "electron main.js",
@@ -22,7 +23,8 @@
     },
     "win": {
       "target": "nsis",
-      "icon": "/Assets/Images/Icons/frog.ico"
+      "icon": "/Assets/Images/Icons/frog.ico",
+      "publisherName": "Usav12"
     },
     "linux": {
       "target": [
