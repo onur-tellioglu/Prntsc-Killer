@@ -171,54 +171,7 @@ button:disabled {
 }
 /* Button Styles End */
 
-.container {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 20px;
-  border-radius: 12px;
-}
-
-.form-label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 6px;
-}
-
-.form-input {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 16px;
-  border-radius: 6px;
-  transition: all 0.3s;
-}
-
-.form-input:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 5px #007bff;
-  outline: none; /* Remove the default outline */
-}
-
-.logArea,
-.latestImageContainer {
-  flex-basis: 48%;
-}
-
-.logArea {
-  overflow-y: auto;
-  height: 450px;
-}
-
-.latestImageContainer p {
-  margin-bottom: 12px;
-  font-weight: bold;
-}
-
-#latestImage {
-  width: 100%;
-  height: auto;
-}
-
-/* Theme Switch Wrapper */
+/* Theme Switch Starts */
 .theme-switch-wrapper {
   padding-bottom: 15px;
   display: flex;
@@ -273,6 +226,55 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+/* Theme Switch End*/
+
+/* General Styles Start */
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.form-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px #007bff;
+  outline: none;
+}
+
+.logArea,
+.latestImageContainer {
+  flex-basis: 48%;
+}
+
+.logArea {
+  overflow-y: auto;
+  height: 450px;
+}
+
+.latestImageContainer p {
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+#latestImage {
+  width: 100%;
+  height: auto;
+}
 
 .contentArea {
   padding-top: 25px;
@@ -281,7 +283,6 @@ input:checked + .slider:before {
   align-items: flex-start;
 }
 
-/* Info Container */
 #infoContainer {
   margin-top: 5px;
   padding: 20px;
@@ -289,14 +290,12 @@ input:checked + .slider:before {
   transition: all 0.3s ease-in-out;
 }
 
-/* Section Headings */
 #infoContainer h1,
 #infoContainer h2 {
   font-weight: bold;
   text-transform: uppercase;
 }
 
-/* Make h1 bigger than h2 */
 #infoContainer h1 {
   font-size: 2.2em;
 }
@@ -308,8 +307,9 @@ input:checked + .slider:before {
 .stepBreak {
   padding-left: 25px;
 }
+/* General Styles End */
 
-/* Default Scrollbar Styles */
+/* Default Scrollbar Styles Start*/
 body::-webkit-scrollbar {
   width: 10px;
   background-color: #f5f5f5;
@@ -343,3 +343,4 @@ body::-webkit-scrollbar-thumb {
     color-stop(0.86, rgb(72, 72, 72))
   );
 }
+/* Default Scrollbar Styles End*/
